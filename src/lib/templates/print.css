@@ -1,0 +1,69 @@
+/* Print styles for resume export */
+@media print {
+  @page {
+    margin: 0.5in;
+    size: letter;
+  }
+
+  body {
+    font-size: 12pt;
+    line-height: 1.4;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  /* Ensure proper page breaks */
+  .page-break {
+    page-break-before: always;
+  }
+
+  /* Adjust colors for print */
+  .text-blue-600 {
+    color: #2563eb !important;
+  }
+
+  .text-purple-600 {
+    color: #7c3aed !important;
+  }
+
+  .text-pink-600 {
+    color: #db2777 !important;
+  }
+
+  .bg-blue-100 {
+    background-color: #dbeafe !important;
+  }
+
+  .bg-purple-100 {
+    background-color: #f3e8ff !important;
+  }
+
+  .bg-pink-100 {
+    background-color: #fce7f3 !important;
+  }
+
+  /* Remove shadows and borders for print */
+  .shadow-sm,
+  .shadow-lg {
+    box-shadow: none !important;
+  }
+
+  /* Ensure links are visible but not colored */
+  a {
+    color: inherit !important;
+    text-decoration: none !important;
+  }
+
+  /* Adjust spacing for print */
+  .mb-8 { margin-bottom: 2rem !important; }
+  .mb-6 { margin-bottom: 1.5rem !important; }
+  .mb-4 { margin-bottom: 1rem !important; }
+  .mb-2 { margin-bottom: 0.5rem !important; }
+
+  .p-8 { padding: 2rem !important; }
+  .p-6 { padding: 1.5rem !important; }
+  .p-4 { padding: 1rem !important; }
+}
+
